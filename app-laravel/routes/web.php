@@ -11,6 +11,14 @@
 |
 */
 
+Route::match(['get','post'],'/match', function () {
+    return 'match';
+});
+
+Route::get('/contato', function () {
+    return view('contato');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
